@@ -1,122 +1,271 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>MadCross.de</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+<head>
+	<title>MadCross.de</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/myStyle.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">MadCross.de präsentiert</span>
-								</a>
+	<script src="assets/js/myScript.js"></script>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+	<script>
+		function myMap() {
 
+			var mapCanvas = document.getElementById("map");
+			var myLatLng = {
+				lat: 50.751865,
+				lng: 13.639060
+			};
+
+			var mapOptions = {
+				center: new google.maps.LatLng(myLatLng),
+				zoom: 15,
+				disableDefaultUI: true
+			};
+			var map = new google.maps.Map(mapCanvas, mapOptions);
+
+			var marker = new google.maps.Marker({
+				position: myLatLng,
+				map: map,
+				title: 'MadEast Hermsdorf'
+			});
+		}
+	</script>
+
+
+</head>
+
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">MadCross.de
+						präsentiert</span>
+				</a>
+
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="./pages/impressum.html">Impressum</a></li>
+				<li><a href="./pages/privacy.html">Datenschutz</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<header>
+
+					<div class="row">
+						<div class="col-4 col-6-medium">
+							<h1>MadEast 2019</h1>
 						</div>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="./pages/impressum.html">Impressum</a></li>
-							<li><a href="./pages/privacy.html">Datenschutz</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>MadEast 2019</h1>
-									<h2><i>powered by Massive SnowPark e.V.</i></h2>
-								<p>Wir sind wieder da!</p>
-							</header>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<a href="javascript:void(0)">
-										<h2>Wann?</h2>
-										<div class="content">
-											<p>06.07. - 07.07.2019</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<a href="javascript:void(0)">
-										<h2>Wo?</h2>
-										<div class="content">
-											<p>Massive SnowPark Ritterstall</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<a href="javascript:void(0)">
-										<h2>Info!</h2>
-										<div class="content">
-											<p>Infokanal WhatsApp</p>
-											<p><b>Info-MSP _MAD EAST ENDURO</b></p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<a href="javascript:void(0)">
-										<h2>Anmeldung</h2>
-										<div class="content">
-											<p><i>In Arbeit - stay tuned!</i></p>
-										</div>
-									</a>
-								</article>
-							
-							</section>
+						<div class="col-8 col-6-medium">
+							<h2><i>powered by Massive SnowPark e.V.</i></h2>
 						</div>
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="copyright">
-								<li><a href="./pages/impressum.html">Impressum</a></li>
-								<li><a href="./pages/privacy.html">Datenschutz</a></li>
-							</ul>
-							<h2>powered by <a href="https://www.hexenhaus.online" target="_new">www.hexenhaus.online</a></h2>	
-						</div>
-					</footer>
+					<hr>
+
+					<h3>Hallo Enduristi und Endurista!</h3>
+
+					<p><span class="image right"><img src="images/trikot.jpg" alt=""></span> Auch dieses Jahr rocken wir
+						wieder die MadEast in Wald und Flur rund um den Hermsdorfer
+						Ritterstall. Am <b>06.07.2019</b> findet die <b>Mad East Enduro</b> und am <b>07.07.2019</b>
+						das <b>Mad East Cross-Country</b> Event statt.<br><br>
+						Für den Samstag haben das Streckenportfolio etwas erweitert, statt 4 gibt es nun 5 Strecken
+						mit unterschiedlicher Charakteristik.</p>
+
+					<p><span class="image left"><img src="images/logoright.jpg" style="width:100px" alt=""></span> Am
+						Sonntag erwartet Euch wieder das im letzten Jahr
+						erfolgreich gestartete
+						Cross-Country, beginnend mit Laufrad-Rennen bis hin zum 6km Cross-Country für die
+						reiferen Semester.</p>
+
+				</header>
+				<section class="tiles">
+					<article class="style1">
+						<span class="image">
+							<img src="images/pic01.jpg" alt="" />
+						</span>
+						<a href="#time">
+							<h2>Wann?</h2>
+							<div class="content">
+								<p>06.07. - 07.07.2019</p>
+							</div>
+						</a>
+					</article>
+					<article class="style2">
+						<span class="image">
+							<img src="images/pic02.jpg" alt="" />
+						</span>
+						<a href="#place">
+							<h2>Wo?</h2>
+							<div class="content">
+								<p>Massive SnowPark Ritterstall</p>
+							</div>
+						</a>
+					</article>
+					<article class="style4">
+						<span class="image">
+							<img src="images/pic04.jpg" alt="" />
+						</span>
+						<a href="#register">
+							<h2>Anmeldung</h2>
+							<div class="content">
+								<p><i>In Arbeit - stay tuned!</i></p>
+							</div>
+						</a>
+					</article>
+
+					<article class="style3">
+						<span class="image">
+							<img src="images/pic03.jpg" alt="" />
+						</span>
+						<a href="#eat">
+							<h2>Verpflegung</h2>
+
+						</a>
+					</article>
+
+					<article class="style5">
+						<span class="image">
+							<img src="images/pic05.jpg" alt="" />
+						</span>
+						<a href="#party">
+							<h2>Party</h2>
+							<div class="content">
+								<p><i>06.07.2019 ab 22:00Uhr</i></p>
+							</div>
+						</a>
+					</article>
+
+					<article class="style6">
+						<span class="image">
+							<img src="images/pic06.jpg" alt="" />
+						</span>
+						<a href="#follow">
+							<h2>Follow</h2>
+							<p><i>Social Media</i></p>
+						</a>
+					</article>
+
+
+				</section>
+				<br>
+
+				<section id="time">
+					<h2>Wann</h2>
+					<blockquote><b>06.07.2019</b> Mad East Enduro</blockquote>
+					<blockquote><b>07.07.2019</b> Mad East Cross-Country</blockquote>
+				</section>
+
+				<br>
+
+				<section id="place">
+					<h2>Wo</h2>
+					<blockquote>Massive Snowpark e.V., Hermsdorf/Erzgebirge, Bergstraße 16, Am
+						Ritterstall</blockquote>
+					<div id="map" style="max-width:500px; height:250px"></div>
+				</section>
+
+				<br>
+
+				<section id="register">
+					<h2>Anmeldung</h2>
+					<blockquote><b>In Arbeit</b> Stay Tuned</blockquote>
+				</section>
+
+				<br>
+
+				<section id="eat">
+					<h2>Verpflegung</h2>
+					<blockquote>Alle Starter erhalten eine Portion Nudeln und Getränk umsonst.
+					</blockquote>
+					<blockquote>
+						Ansonsten Grillstand, weitere Nudeln, Kuchen etc. auf eigene Rechnung.
+						</sectionblockquote>
+				</section>
+
+				<br>
+
+				<section id="party">
+					<h2>Party</h2>
+					<blockquote><b>06.07.2019</b> ab 22:00 Uhr</blockquote>
+					<blockquote>wird durchgeführt durch Veranstalter <b>Deep Note</b> [ <a
+							href="https://www.facebook.com/deepnote42/"
+							target="_blank">https://www.facebook.com/deepnote42</a> ]
+					</blockquote>
+					<blockquote>DJ <b>4:20</b> [ <a href="https://www.facebook.com/fourtwenty/"
+							target="_blank">https://www.facebook.com/fourtwenty</a> ]</blockquote>
+				</section>
+
+				<br>
+
+				<section id="follow">
+					<h2>Follow</h2>
+					<ul class="alt">
+						<li><b>Vereinsseite </b><a href="http://www.massive-snowpark.de"
+								target="_blank">www.massive-snowpark.de</a></li>
+						<li><b>Facebook </b><a href="https://de-de.facebook.com/madeast500"
+								target="_blank">de-de.facebook.com/madeast500</a></li>
+						<li><b>Event-Site </b><a href="https://www.madcross.de" target="_blank">www.madcross.de</a></li>
+						<li><b>Infokanal WhatsApp </b><span>Info-MSP _MAD EAST ENDURO</span></li>
+					</ul>
+				</section>
 
 			</div>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<ul class="copyright">
+					<li><a href="./pages/impressum.html">Impressum</a></li>
+					<li><a href="./pages/privacy.html">Datenschutz</a></li>
+				</ul>
+				<h4>Hosted and build by <a href="https://www.hexenhaus.online" target="_new">www.hexenhaus.online</a>
+				</h4>
+				<div id="map" style="width:100%; height:199px"></div>
+			</div>
+		</footer>
 
-	</body>
+	</div>
+
+	<a id="myBtn" href="javascript:topFunction()" class="button icon fa-arrow-up">Top</a>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-PCVCy1NS1VqXL_J-wEBfTa5kp6UIS38&callback=myMap">
+	</script>
+
+
+</body>
+
 </html>

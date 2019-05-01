@@ -172,7 +172,7 @@
 
 				// Hide.
 					$menu._hide();
-
+					$body
 			})
 			.on('keydown', function(event) {
 
